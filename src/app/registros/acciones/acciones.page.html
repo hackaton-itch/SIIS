@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end" routerLink="/mostrar-datos">
+      <ion-icon name="eye"></ion-icon>
+      <ion-label>Ver todos</ion-label>
+    </ion-buttons>
+    <ion-title>Acciones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label>Evento</ion-label>
+    <ion-select placeholder="Seleccione el Evento">
+      <ion-select-option value="">Evento Recolección de Sargazo Playa del Carmen</ion-select-option>
+      <ion-select-option value="">Evento Recolección de Sargazo Playas en Cancun</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+
+    <ion-label position="floating">Medida Preventiva</ion-label>
+    <ion-input type="text" name="text"></ion-input>
+
+  </ion-item>
+  <ion-button expand="full" color="success">Guardar</ion-button>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+
+        <ion-tab-button tab="eventos" routerLink="/eventos">
+          <ion-icon name="create"></ion-icon>
+          <ion-label>Eventos</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="registros" routerLink="/home-registros">
+          <ion-icon name="create"></ion-icon>
+          <ion-label>Registros</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="acciones" routerLink="/acciones">
+          <ion-icon name="create"></ion-icon>
+          <ion-label>Acciones</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="sesion" routerLink="/home">
+          <ion-icon name="contact"></ion-icon>
+          <ion-label>Cerrar Sesión</ion-label>
+        </ion-tab-button>
+
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Reportes</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="col-md-10">
+    <form>
+      <div class="formgroup">
+        <ion-label>Título</ion-label>
+        <ion-input type="text" name="titulo" class="form-control" placeholder="Título"></ion-input>
+
+      </div>
+      <div class="formgroup">
+        <ion-label>Nombre</ion-label>
+        <ion-input type="text" name="nombre" class="form-control" placeholder="Nombre"></ion-input>
+
+      </div>
+      <div class="formgroup">
+        <ion-label>Lugar</ion-label>
+        <ion-input type="text" name="lugar" class="form-control" placeholder="Lugar"></ion-input>
+
+      </div>
+      <div class="formgroup">
+        <ion-label>Fecha</ion-label>
+        <ion-textarea type="text" name="fecha" class="form-control"></ion-textarea>
+
+      </div>
+      <!--<div class="formgroup">
+        <ion-label>Cargar archivo</ion-label>
+        
+      </div>-->
+      <div class="formgroup">
+        <ion-button type="submit" class="btn btn-outline-primary">Enviar</ion-button>
+
+      </div>
+    </form>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+
+        <ion-tab-button tab="about" routerLink="/home">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Inicio</ion-label>
+        </ion-tab-button>
+
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>
